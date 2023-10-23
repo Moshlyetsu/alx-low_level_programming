@@ -7,14 +7,14 @@
  */
 size_t free_listint_safe(listint_t **h)
 {
-	
+
 	listint_t *cntainr;
 	size_t freed_elmnts = 0;
 	int isfree;
-	
+
 
 	if (!h || !*h)
-		return (0);
+	return (0);
 
 	while (*h)
 	{
@@ -34,7 +34,7 @@ size_t free_listint_safe(listint_t **h)
 			break;
 		}
 	}
-	
+
 	*h = NULL;
 
 	return (freed_elmnts);

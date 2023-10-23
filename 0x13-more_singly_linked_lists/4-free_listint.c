@@ -2,7 +2,8 @@
 
 /**
  * free_listint ->Must free a linked list of type listint_t.
- * @head: the pointer to the adress of  head of the listint_t list that must be freed up.
+ * @head: the pointer to the adress of  head of the
+ * listint_t list that must be freed up.
  */
 void free_listint(listint_t *head)
 {
