@@ -23,7 +23,7 @@ int create_file(const char *filename, char *text_content)
 	if (!text_content)
 	{
 		for (lttr_count = 0; text_content[lttr_count]; lttr_count++)
-			break;
+			;
 	}
 
 	wrt_fl = write(opn_fl, text_content, lttr_count);
