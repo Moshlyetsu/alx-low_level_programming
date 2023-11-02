@@ -18,8 +18,8 @@ int create_file(const char *filename, char *text_content)
 
 	if (!text_content)
 	{
-		for (lttr_count = 0; text_content[lttr_count]; lttr_count++)
-			;
+		for (lttr_count = 0; text_content[lttr_count];)
+			lttr_count++;
 	}
 
 	opn_fl = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
